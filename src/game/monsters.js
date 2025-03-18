@@ -5,7 +5,7 @@ function createMonster(x, z) {
 
   // Corpo
   const bodyGeometry = new THREE.BoxGeometry(1, 2, 1);
-  const bodyMaterial = new THREE.MeshStandardMaterial({ color: 0x8B0000 }); // Vermelho escuro
+  const bodyMaterial = new THREE.MeshStandardMaterial({ color: 0xdd0000 }); // Vermelho escuro
   const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
   body.position.y = 1;
   monster.add(body);
@@ -46,7 +46,7 @@ export function createMonsters(scene) {
   const monsters = [];
   
   // Criar 3 monstros em posições aleatórias
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 18; i++) {
     const monster = createMonster(
       Math.random() * 40 - 20,
       Math.random() * 40 - 20
