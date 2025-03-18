@@ -45,6 +45,7 @@ function createMonster(x, z) {
 export function createMonsters(scene) {
   const monsters = [];
   
+  // Criar 3 monstros em posições aleatórias
   for (let i = 0; i < 3; i++) {
     const monster = createMonster(
       Math.random() * 40 - 20,
